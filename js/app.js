@@ -76,13 +76,16 @@ function startGame(){
     minute = 0; 
     hour = 0;
     var timer = document.querySelector(".timer");
-    timer.innerHTML = "0 mins 0 secs";
+    timer.innerHTML = "0 Minuten 0 Sekunden";
     clearInterval(interval);
 }
 
 
 // @description toggles open and show class to display cards
 var displayCard = function (){
+    //alert(this.getAttribute('sound'));
+    var audio = new Audio(this.getAttribute('sound'));
+    audio.play();
     this.classList.toggle("open");
     this.classList.toggle("show");
     this.classList.toggle("disabled");
@@ -182,7 +185,7 @@ var timer = document.querySelector(".timer");
 var interval;
 function startTimer(){
     interval = setInterval(function(){
-        timer.innerHTML = minute+"mins "+second+"secs";
+        timer.innerHTML = minute+" Minuten "+second+" Sekunden";
         second++;
         if(second == 60){
             minute++;
