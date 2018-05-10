@@ -1,3 +1,6 @@
+@font-face { font-family: 'druckschrift';
+	src: url('druckschrift.ttf') format('truetype'); }
+
 html {
 	box-sizing: border-box;
 }
@@ -18,7 +21,7 @@ body {
 
 body {
 	background: #ffffff;
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'druckschrift';
 	font-size: 16px;
 }
 
@@ -30,7 +33,7 @@ body {
 }
 
 h1 {
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'druckschrift';
 }
 
 
@@ -58,6 +61,8 @@ h1 {
 	margin: 0.2rem 0.2rem;
 	background: #141214;;
 	font-size: 0;
+	font-family: druckschrift;
+	font-style: unset;
 	color: #ffffff;
 	border-radius: 5px;
 	cursor: pointer;
@@ -172,13 +177,13 @@ h1 {
 	width: 85%;
 	position: relative;
 	transition: all 5s ease-in-out;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'druckschrift';
 }
   
 .popup h2 {
 	margin-top: 0;
 	color: #333;
-	font-family: Tahoma, Arial, sans-serif;
+	font-family: druckschrift;
 }
 
 .popup .close {
@@ -219,7 +224,7 @@ h1 {
 	display: block;
 	margin: 0 auto;
 	width: 50%;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'druckschrift';
 	color: #ffffff;
 	border-radius: 5px;
 }
@@ -300,7 +305,7 @@ h1 {
 ***************************/
 
 
-@media (max-width: 320px) {
+@media (max-width: 20px) {
 	.deck {
 		width: 85%;
 	}
